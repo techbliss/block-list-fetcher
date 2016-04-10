@@ -24,9 +24,9 @@ from urllib2 import urlopen
 import fileinput
 from PyQt4 import QtCore, QtGui, QtWebKit
 from PyQt4.QtGui import *
+dn = os.getcwd()
 
-
-
+sys.path.insert(0, dn)
 sys.path.insert(0, os.getcwd()+r'\icons')
 
 try:

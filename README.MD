@@ -50,6 +50,8 @@ Short cuts
 ###################################################
 
 ```
+remember to have latest PyQt4 installed from Riverbank 
+
 
 
 ![git](https://cloud.githubusercontent.com/assets/3592375/14411534/3cff9ec0-ff4b-11e5-80fc-82481ea57555.png)

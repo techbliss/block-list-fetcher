@@ -50,7 +50,8 @@ Short cuts
 ###################################################
 
 ```
-remember to have latest PyQt4 installed from Riverbank 
+remember to have latest PyQt4 installed from Riverbank  or use PyQt-4.11.4PyQt4-4.11.4-gpl-Py2.7-Qt4.8.7.py to download the installer.
+
 
 
 

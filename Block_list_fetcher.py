@@ -24,6 +24,11 @@ from urllib2 import urlopen
 import fileinput
 from PyQt4 import QtCore, QtGui, QtWebKit
 from PyQt4.QtGui import *
+try:
+    import ssl
+except ImportError:
+    print "error: no ssl support"
+
 dn = os.getcwd()
 
 sys.path.insert(0, dn)
@@ -315,23 +320,23 @@ class Ui_MainWindow(object):
         webbrowser.open('http://ransomwaretracker.abuse.ch/')
 
     def command2(self):
-        url1 = 'https://ransomwaretracker.abuse.ch/downloads/RW_IPBL.txt'
+        url1 = 'http://ransomwaretracker.abuse.ch/downloads/RW_IPBL.txt'
         fetchblock = urlopen(url1).read()
         self.textEdit.setPlainText(fetchblock)
 
     def command3(self):
-        url2 = 'https://ransomwaretracker.abuse.ch/downloads/RW_URLBL.txt'
+        url2 = 'http://ransomwaretracker.abuse.ch/downloads/RW_URLBL.txt'
         fetchblock2 = urlopen(url2).read()
         self.textEdit.setPlainText(fetchblock2)
 
     def command4(self):
-        url3 = 'https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt'
+        url3 = 'http://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt'
         fetchblock3 = urlopen(url3).read()
         self.textEdit.setPlainText(fetchblock3)
 
 
     def command5(self):
-        url4 = 'https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt'
+        url4 = 'http://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt'
         fetchblock4 = urlopen(url4).read()
         self.textEdit.setPlainText('\n' + fetchblock4.replace('\n', '\n127.0.0.1 '))
 

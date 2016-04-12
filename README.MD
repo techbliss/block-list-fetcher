@@ -1,5 +1,7 @@
 Malware block fetcher v 1
 
+IMPORTANT!!
+DO NOT GO TO ANY OF THESE SITES IN THE FETCHED LIST!!
 
 what it Does:
 Late i have been looking for wuite a few various block list for blocking ip and domains.

@@ -96,8 +96,7 @@ class Ui_MainWindow(object):
         MainWindow.addToolBar(QtCore.Qt.LeftToolBarArea, self.toolBar_3)
         MainWindow.insertToolBarBreak(self.toolBar_3)
 
-        self.progress = QtGui.QProgressBar(self)
-        self.progress.setGeometry(200, 80, 250, 20)
+
 
         #populate action1
         #first action 1
